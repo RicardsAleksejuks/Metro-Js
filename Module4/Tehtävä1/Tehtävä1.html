@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TV Series Search</title>
+  <script src="Tehtävä1.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Search for a TV series</h1>
+    <form id="search-form" action="https://api.tvmaze.com/search/shows" method="get" target="_blank">
+      <label for="query">Series name</label>
+      <input id="query" name="q" type="search" required>
+      <button type="submit">Search</button>
+    </form>
+    <p>Search results open as JSON in a new tab. The matching data is also logged in the browser console.</p>
+  </main>
+</body>
+</html>
